@@ -1,0 +1,52 @@
+.slide-content {
+  display: flex;
+  height: 150px;
+  gap: 20px;
+}
+
+.sliderImg {
+  width: 400px;
+}
+
+.sliderImg img {
+  height: 100%;
+  width: auto;
+}
+
+.slideHeadline {
+  font-weight: bold;
+}
+
+.slideTxt {
+  text-align: left;
+}
+
+.customerReview {
+  padding: 50px 0;
+  margin-bottom: 100px;
+  background-image: url('../../img/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.customerReview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.customerReview-wrap {
+  z-index: 2;
+  position: relative;
+}
+
+.headlineR {
+  z-index: 2;
+}

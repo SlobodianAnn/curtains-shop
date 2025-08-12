@@ -1,0 +1,108 @@
+.card {
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  position: relative;
+  gap: 10px;
+}
+
+.cardImg {
+  width: 100%;
+}
+
+.cardName {
+  font-size: 22px;
+  text-align: center;
+}
+
+.cardAmount {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px dashed #ccc;
+  padding: 2px 0px;
+  text-align: center;
+}
+
+.cardRating {
+  background: url('../../img/com-star-n.png') repeat-x;
+  height: 13px;
+  width: 90px;
+  margin: 20px auto;
+}
+
+.stars {
+  display: block;
+  background: url('../../img/com-star-z.png') repeat-x;
+  height: 13px;
+}
+
+.cardPriceWrapper {
+  display: flex;
+  gap: 10px;
+  font-size: 22px;
+  align-items: center;
+}
+
+.cardOldPrice {
+  font-size: 18px;
+  color: #333;
+  text-decoration: line-through;
+  padding: 0px 20px 0px 0px;
+}
+
+.cardNewPrice {
+  color: #ff70a6;
+  text-align: center;
+  line-height: 12px;
+  font-weight: bold;
+}
+
+
+.cardBtnOrder {
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 90%;
+  width: 100%;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  background: #0d6efd;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 40px;
+  /* box-shadow: 0px 4px 1px #2aa537; */
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+.cardBtnOrder:hover {
+  color: #fff;
+  box-shadow: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.cardCircle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff70a6;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgWrapper {
+  max-height: 350px;
+  overflow: hidden;
+}

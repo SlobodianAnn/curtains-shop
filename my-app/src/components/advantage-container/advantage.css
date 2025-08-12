@@ -1,0 +1,40 @@
+.headline {
+  font-size: 30px;
+}
+
+.iconImgWrapper {
+  width: 70px;
+  height: 70px;
+  background-color: #0d6efd;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconImgWrapper img {
+  width: 40px;
+}
+
+.iconTitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.iconBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.iconBox {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

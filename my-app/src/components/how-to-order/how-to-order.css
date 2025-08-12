@@ -1,0 +1,25 @@
+.wrapperHowToOrder {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.HowToOrder {
+  margin-bottom: 50px;
+}
+
+.orderIcon {
+  max-width: 200px;
+}
+
+/* .orderIcon:after {
+  content: '';
+  background: url('../../img/arrow-right.png') no-repeat;
+  display: block;
+  float: right;
+  width: 65px;
+  height: 5px;
+  margin: 65px -85px;
+} */
