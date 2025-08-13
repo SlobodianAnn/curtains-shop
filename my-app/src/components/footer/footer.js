@@ -5,7 +5,7 @@ const FooterContainer = () => {
     <div className="footerContainer">
       <div className="container footerWrap">
         <div className="footerHeadline">ШТОРЫ ЕВРОПЕЙСКОГО КАЧЕСТВА</div>
-        <a className="btn btn-catalog" href="">
+        <a className="btn btn-catalog" href="#catalog">
           Смотреть каталог
         </a>
       </div>

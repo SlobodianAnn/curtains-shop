@@ -11,16 +11,16 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="">КАТАЛОГ</a>
+              <a href="#catalog">КАТАЛОГ</a>
             </li>
             <li>
-              <a href="">ПРЕИМУЩЕСТВА</a>
+              <a href="#advantage">ПРЕИМУЩЕСТВА</a>
             </li>
             <li>
-              <a href="">Отзывы</a>
+              <a href="#review">Отзывы</a>
             </li>
             <li>
-              <a href="">КАК ЗАКАЗАТЬ</a>
+              <a href="#order">КАК ЗАКАЗАТЬ</a>
             </li>
           </ul>
         </nav>

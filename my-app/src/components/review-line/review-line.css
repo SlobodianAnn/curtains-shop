@@ -7,6 +7,7 @@
 
 .reviewContainer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   font-size: 20px;
   justify-content: center;

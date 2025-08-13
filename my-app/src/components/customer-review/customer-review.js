@@ -36,9 +36,9 @@ const CustomerReview = () => {
   ];
 
   return (
-    <div className="customerReview">
+    <div className="customerReview" id="review">
       <div className="container customerReview-wrap ">
-        <div className="headline headlineR">Отзывы клиентов</div>
+        <div className="headline headlineR h2">Отзывы клиентов</div>
         <Slider slides={slides} />
       </div>
     </div>

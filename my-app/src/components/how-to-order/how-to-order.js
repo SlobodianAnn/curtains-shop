@@ -6,9 +6,9 @@ import deliver from '../../img/deliver.png';
 
 const HowToOrder = () => {
   return (
-    <div className="HowToOrder">
+    <div className="HowToOrder" id="order">
       <div className="container">
-        <div className="headline">Как заказать?</div>
+        <div className="headline h2">Как заказать?</div>
         <div className="wrapperHowToOrder">
           <div className="iconBox orderIcon">
             <div className="iconImgWrapper">

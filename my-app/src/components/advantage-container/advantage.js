@@ -9,8 +9,8 @@ import './advantage.css';
 const AdvantageContainer = () => {
   return (
     <div>
-      <div className="container">
-        <div className="headline">Наши преимущества</div>
+      <div className="container" id="advantage">
+        <div className="headline h2">Наши преимущества</div>
         <div className="iconBoxWrapper">
           <div className="iconBox">
             <div className="iconImgWrapper">

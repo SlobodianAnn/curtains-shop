@@ -46,10 +46,18 @@
 }
 
 .headline {
-  font-size: 50px;
+  /* font-size: 50px; */
   font-weight: bold;
   margin-bottom: 40px;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+
+  .h2,
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .headline:after {
@@ -61,4 +69,15 @@
   background: #ff7aac;
   margin: 15px auto 0px auto;
 
+}
+
+.cartCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
 }
