@@ -1,7 +1,7 @@
 import './shopping-cart.css';
 import FormBasic from '../formik/formik';
 
-const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart }) => {
+const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleThankCard }) => {
   const getTotal = () =>
     cartItems.reduce((sum, item) => {
       const price = Number(item.newPrice.toString().replace(/\s|₽/g, ''));
@@ -14,7 +14,7 @@ const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart }) => {
       данные: formData,
     });
 
-    alert('Спасибо за заказ!');
+    //toggleThankCard();
 
     // Очистить корзину и закрыть
     if (onClearCart) onClearCart();

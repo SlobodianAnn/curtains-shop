@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { use, useState } from 'react';
 import Header from './components/header/header';
 import FirstScreen from './components/first-screen/first-screen';
 import CatalogSearch from './components/catalog-search/catalog-search';
@@ -9,14 +9,20 @@ import HowToOrder from './components/how-to-order/how-to-order';
 import FooterContainer from './components/footer/footer';
 import ShoppingCart from './components/shopping-cart/shopping-cart';
 import BucketStatic from './components/bucket/bucket';
+import ThankComponent from './components/thank-component/thank-component';
 import './App.css';
 
 function App() {
   const [isCartVisible, setCartVisible] = useState(false);
+  const [isThankVisible, setThankVisible] = useState(false);
   const [cartItems, setCartItems] = useState([]);
 
   const toggleCart = () => {
     setCartVisible((prev) => !prev);
+  };
+
+  const toggleThankCard = () => {
+    setThankVisible((prev) => !prev);
   };
 
   const handleAddToCart = (item) => {
@@ -43,7 +49,8 @@ function App() {
       <HowToOrder />
       <FooterContainer />
       <BucketStatic toggleCart={toggleCart} cartItems={cartItems} />
-      {isCartVisible && <ShoppingCart cartItems={cartItems} onClose={toggleCart} onRemoveItem={handleRemoveItem} onClearCart={handleClearCart} />}{' '}
+      {isCartVisible && <ShoppingCart cartItems={cartItems} onClose={toggleCart} onRemoveItem={handleRemoveItem} onClearCart={handleClearCart} toggleThankCard={toggleThankCard} />}
+      {/* {isThankVisible && <ThankComponent cartItems={cartItems} />} */}
     </div>
   );
 }

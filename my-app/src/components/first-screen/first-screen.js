@@ -6,13 +6,11 @@ const FirstScreen = () => {
       <div className="container">
         <div className="text-wrapper">
           <h1 className="h1">
-            ШТОРЫ
-            <br /> <span>ЕВРОПЕЙСКОГО КАЧЕСТВА</span>
+            SOLEA
+            <br /> <span>L’élégance à vos fenêtres</span>
           </h1>
-          <div className="attention h2">ВНИМАНИЕ!</div>
           <div className="box">
-            <div className="sale-txt h2">ПОЛНАЯ РАСПРОДАЖА</div>
-            <div className="sale-subtxt display-7">Последний день ликвидации товара! Скидки до 70%</div>
+            <div className="sale-subtxt display-7">Chez Solea, chaque rideau est une touche de lumière et de raffinement. Des tissus délicats, des couleurs harmonieuses et un style intemporel pour sublimer votre intérieur. Offrez à vos fenêtres l’élégance qu’elles méritent.</div>
           </div>
           <a className="btn btn-catalog" href="#catalog">
             Смотреть каталог
