@@ -8,6 +8,7 @@
   position: relative;
   gap: 10px;
   overflow: hidden;
+  justify-content: space-around;
 }
 
 .cardImg {
@@ -59,6 +60,7 @@
   text-align: center;
   line-height: 12px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 
@@ -80,6 +82,7 @@
   /* box-shadow: 0px 4px 1px #2aa537; */
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
+
 }
 
 .cardBtnOrder:hover {

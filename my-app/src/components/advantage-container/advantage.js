@@ -33,7 +33,7 @@ const AdvantageContainer = () => {
               <img src={delivery} alt="" />
             </div>
             <div className="iconTitle">Быстрая доставка</div>
-            <div className="iconTxt">Доставим быстро в любую точку за 1-10 дней, с оплатой при получении</div>
+            <div className="iconTxt">Доставим быстро в любую точку за 1-14 дней</div>
           </div>
 
           <div className="iconBox">
@@ -50,7 +50,7 @@ const AdvantageContainer = () => {
             </div>
 
             <div className="iconTitle">НАГРАДЫ ЗА РАБОТУ</div>
-            <div className="iconTxt">Лучший интернет-магазин штор 2020 года</div>
+            <div className="iconTxt">Лучший интернет-магазин штор 2024 года</div>
           </div>
 
           <div className="iconBox">

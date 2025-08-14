@@ -4,9 +4,7 @@ import logo from '../../img/logo.png';
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="logo-container">
-        <img src={logo} alt="logo" />
-      </div>
+      <div className="logo-container h3">SOLEA</div>
       <div className="nav-container">
         <nav>
           <ul>

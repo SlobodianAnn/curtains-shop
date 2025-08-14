@@ -25,6 +25,7 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
       <div className="cardName">{name}</div>
       <div className="cardAmount">Осталось: {count} шт.</div>
       <div className="cardInfo">Материалы: {material}</div>
+      <div className="cardInfo">В комплект входит тюль</div>
 
       <div className="cardInfoSIze">
         Размер:
@@ -43,11 +44,11 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
       </div>
 
       <div className="cardPriceWrapper">
-        <div className="cardOldPrice">{oldPrice} руб.</div>
-        <div className="cardNewPrice">{newPrice} руб.</div>
+        {/* <div className="cardOldPrice">{oldPrice} €</div> */}
+        <div className="cardNewPrice">{newPrice} €</div>
       </div>
 
-      <div className="cardCircle">-30%</div>
+      {/* <div className="cardCircle">-30%</div> */}
 
       <button
         className="cardBtnOrder"

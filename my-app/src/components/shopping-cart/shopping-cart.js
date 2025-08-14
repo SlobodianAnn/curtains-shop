@@ -14,16 +14,13 @@ const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleTha
       данные: formData,
     });
 
-    //toggleThankCard();
-
-    // Очистить корзину и закрыть
     if (onClearCart) onClearCart();
     if (onClose) onClose();
   };
 
   return (
-    <div className="ShoppingCartBg">
-      <div className="shoppingCartWrapper">
+    <div className="ShoppingCartBg" onClick={onClose}>
+      <div className="shoppingCartWrapper" onClick={(e) => e.stopPropagation()}>
         <button className="cartCloseBtn" onClick={onClose} aria-label="Закрыть корзину">
           &#10005;
         </button>

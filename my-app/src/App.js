@@ -9,7 +9,6 @@ import HowToOrder from './components/how-to-order/how-to-order';
 import FooterContainer from './components/footer/footer';
 import ShoppingCart from './components/shopping-cart/shopping-cart';
 import BucketStatic from './components/bucket/bucket';
-import ThankComponent from './components/thank-component/thank-component';
 import './App.css';
 
 function App() {
