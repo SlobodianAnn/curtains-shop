@@ -45,7 +45,7 @@
   display: flex;
   gap: 10px;
   font-size: 22px;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .cardOldPrice {
@@ -58,9 +58,7 @@
 .cardNewPrice {
   color: #ff70a6;
   text-align: center;
-  line-height: 12px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 
@@ -73,7 +71,7 @@
   font-family: "Open Sans", Helvetica, sans-serif;
   color: #fff;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   background: #0d6efd;
   display: block;
   text-align: center;
@@ -82,13 +80,15 @@
   /* box-shadow: 0px 4px 1px #2aa537; */
   text-transform: uppercase;
   transition: all 0.1s ease-in-out;
-
+  border: 1px solid #0d6efd;
 }
 
 .cardBtnOrder:hover {
-  color: #fff;
+  color: #0d6efd;
+  background-color: #fff;
   box-shadow: none;
   transition: all 0.1s ease-in-out;
+  border: 1px solid #0d6efd;
 }
 
 .cardCircle {
@@ -107,6 +107,10 @@
 }
 
 .imgWrapper {
-  max-height: 365px;
+  max-height: 320px;
   overflow: hidden;
+}
+
+.starWrapper {
+  display: flex;
 }

@@ -41,7 +41,7 @@ const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleTha
                     <div className="itemName h6">{item.name}</div>
                     <div className="itemSelectedSize h6">Размер: {item.size || 'Не выбран'}</div>
                   </div>
-                  <div className="itemPrice">{item.newPrice} ₽</div>
+                  <div className="itemPrice">{item.newPrice} €</div>
                 </div>
                 <button className="removeItemBtn" onClick={() => onRemoveItem(item.id)} aria-label="Удалить товар">
                   ✕
@@ -49,7 +49,7 @@ const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleTha
               </div>
             ))}
 
-            <div className="totalSum fs-4">Итого: {getTotal()} ₽</div>
+            <div className="totalSum fs-4">Итого: {getTotal()} €</div>
             <FormBasic onSubmit={handleOrderSubmit} />
           </div>
         )}

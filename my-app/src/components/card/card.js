@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import './card.css';
+import { FiveStars, FourHalfStars, FourStars } from '../star-rating/star-rating';
 
-const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCart, onOpenCart }) => {
+const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCart, onOpenCart, rating }) => {
   // Инициализируем selectedSize: если пришёл пропс size — ставим его, иначе дефолтный вариант
   const [selectedSize, setSelectedSize] = useState('220x300');
+  const discountPercent = '50';
+  const calculatedOldPrice = (newPrice * 1.5).toFixed(2);
 
   const itemData = {
     image,
@@ -14,6 +17,20 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
     material,
     size: selectedSize, // передаём выбранный размер
     id,
+    rating,
+  };
+
+  const selectRating = (rating) => {
+    switch (rating) {
+      case '5':
+        return <FiveStars />;
+      case '4.5':
+        return <FourHalfStars />;
+      case '4':
+        return <FourStars />;
+      default:
+        return <FiveStars />;
+    }
   };
 
   return (
@@ -23,6 +40,7 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
       </div>
 
       <div className="cardName">{name}</div>
+      {selectRating(rating)}
       <div className="cardAmount">Осталось: {count} шт.</div>
       <div className="cardInfo">Материалы: {material}</div>
       <div className="cardInfo">В комплект входит тюль</div>
@@ -44,11 +62,11 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
       </div>
 
       <div className="cardPriceWrapper">
-        {/* <div className="cardOldPrice">{oldPrice} €</div> */}
+        <div className="cardOldPrice"> {calculatedOldPrice} €</div>
         <div className="cardNewPrice">{newPrice} €</div>
       </div>
 
-      {/* <div className="cardCircle">-30%</div> */}
+      <div className="cardCircle">{discountPercent}%</div>
 
       <button
         className="cardBtnOrder"

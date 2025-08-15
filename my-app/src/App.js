@@ -42,7 +42,8 @@ function App() {
         <Header />
       </header>
       <FirstScreen />
-      <CatalogSearch onAddToCart={handleAddToCart} onOpenCart={toggleCart} /> <ReviewLine />
+      <CatalogSearch onAddToCart={handleAddToCart} onOpenCart={toggleCart} />
+      <ReviewLine />
       <AdvantageContainer />
       <CustomerReview />
       <HowToOrder />
