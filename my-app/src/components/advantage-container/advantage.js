@@ -33,7 +33,7 @@ const AdvantageContainer = () => {
               <img src={delivery} alt="" />
             </div>
             <div className="iconTitle">Быстрая доставка</div>
-            <div className="iconTxt">Доставим быстро в любую точку за 14-18 дней</div>
+            <div className="iconTxt">Доставим быстро в любую точку за 9-18 дней</div>
           </div>
 
           <div className="iconBox">

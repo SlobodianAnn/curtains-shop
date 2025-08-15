@@ -4,7 +4,7 @@ import './formik.css';
 const FormBasic = ({ onSubmit }) => {
   return (
     <Formik
-      initialValues={{ name: '', phone: '' }}
+      initialValues={{ name: '', phone: '', adress: '' }}
       onSubmit={(values, { resetForm }) => {
         onSubmit(values);
         resetForm();
@@ -13,10 +13,8 @@ const FormBasic = ({ onSubmit }) => {
       {() => (
         <Form className="orderForm">
           <Field className="form-control" name="name" placeholder="Your name" required />
-
           <Field className="form-control" name="phone" placeholder="+33..." required />
-          <Field className="form-control" name="adress" placeholder="Аdress" required />
-
+          <Field className="form-control" name="adress" placeholder="Adress" required />
           <button className="btn btn-primary" type="submit">
             Оплатить заказ
           </button>

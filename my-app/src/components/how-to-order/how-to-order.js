@@ -14,14 +14,14 @@ const HowToOrder = () => {
             <div className="iconImgWrapper">
               <img src={order} alt="" />
             </div>
-            <div className="iconTxt">Вы оформляете заказ на нашем сайте</div>
+            <div className="iconTxt">Оформляете заказ на нашем сайте</div>
           </div>
 
           <div className="iconBox">
             <div className="iconImgWrapper">
               <img src={wallet} alt="" />
             </div>
-            <div className="iconTxt">Вы оплачиваете заказ</div>
+            <div className="iconTxt">Оплачиваете заказ</div>
           </div>
 
           <div className="iconBox orderIcon">
