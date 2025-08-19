@@ -6,7 +6,7 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
   // Инициализируем selectedSize: если пришёл пропс size — ставим его, иначе дефолтный вариант
   const [selectedSize, setSelectedSize] = useState('220x300');
   const discountPercent = '50';
-  const calculatedOldPrice = (newPrice * 1.5).toFixed(2);
+  const calculatedOldPrice = (newPrice * 2).toFixed(2);
 
   const itemData = {
     image,

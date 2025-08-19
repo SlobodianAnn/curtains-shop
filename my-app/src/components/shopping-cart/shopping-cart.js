@@ -2,11 +2,13 @@ import './shopping-cart.css';
 import FormBasic from '../formik/formik';
 
 const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleThankCard }) => {
-  const getTotal = () =>
-    cartItems.reduce((sum, item) => {
+  const getTotal = () => {
+    const total = cartItems.reduce((sum, item) => {
       const price = Number(item.newPrice.toString().replace(/\s|₽/g, ''));
       return sum + (isNaN(price) ? 0 : price);
     }, 0);
+    return total.toFixed(2);
+  };
 
   const handleOrderSubmit = (formData) => {
     console.log('🛒 Заказ оформлен:', {
