@@ -10,7 +10,7 @@ const CatalogSearch = ({ onAddToCart, onOpenCart }) => {
   return (
     <div className="catalog-search-container" id="catalog">
       <div className="container">
-        <h2 className="headline h2">КАТАЛОГ</h2>
+        <h2 className="headline h2">catalogue</h2>
 
         {/* Если нужно — можно добавить фильтры размеров здесь */}
 

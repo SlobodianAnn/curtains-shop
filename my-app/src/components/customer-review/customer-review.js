@@ -13,7 +13,7 @@ const CustomerReview = () => {
     <div className="slide-content">
       <div className="slideTxt">
         <div className="slideHeadline">Élise</div>
-        <div>Очень довольна покупкой! Шторы качественные, ткань приятная на ощупь, цвет точь-в-точь как на фото. Комната сразу стала уютнее. Рекомендую!</div>
+        <div>Très satisfait de mon achat! Les rideaux sont de haute qualité, le tissu est agréable au toucher et la couleur est identique à celle de la photo. La pièce est immédiatement devenue plus confortable. Je recommande!</div>
       </div>
       <div className="sliderImg">
         <img src={client1} alt="" />
@@ -22,7 +22,7 @@ const CustomerReview = () => {
     <div className="slide-content">
       <div className="slideTxt">
         <div className="slideHeadline">Camille</div>
-        <div>Заказывала уже второй раз - качество на высоте. Цвета глубокие, ткань не мнется, швы ровные. Спасибо магазину!</div>
+        <div>Je l'ai commandé pour la deuxième fois, la qualité est excellente. Les couleurs sont profondes, le tissu ne se froisse pas et les coutures sont régulières. Merci à la boutique!</div>
       </div>
       <div className="sliderImg">
         <img src={client2} alt="" />
@@ -31,7 +31,7 @@ const CustomerReview = () => {
     <div className="slide-content">
       <div className="slideTxt">
         <div className="slideHeadline">Chloé</div>
-        <div>Очень красивые шторы! Выглядят дорого, ткань плотная, но мягкая, приятно драпируется. Повесила в гостиной и сразу стало по-домашнему тепло. Удивительно, как они преобразили весь интерьер. Буду заказывать ещё на кухню!</div>
+        <div>De très beaux rideaux! Ils ont l'air chers, le tissu est épais mais doux et tombe joliment. Je les ai accrochés dans le salon et j'ai tout de suite eu une impression chaleureuse et accueillante. C'est incroyable comme ils ont transformé tout l'intérieur. J'en commanderai d'autres pour la cuisine!</div>
       </div>
       <div className="sliderImg">
         <img src={client3} alt="" />
@@ -40,7 +40,7 @@ const CustomerReview = () => {
     <div className="slide-content">
       <div className="slideTxt">
         <div className="slideHeadline">Amélie</div>
-        <div>Шторы пришли аккуратно сложенные, без запаха и заломов. Повесила сразу и комната преобразилась! Буду советовать друзьям!</div>
+        <div>Les rideaux sont arrivés soigneusement pliés, sans odeur ni plis. Je les ai accrochés immédiatement et la pièce était transformée! Je les recommanderai à mes amis!</div>
       </div>
       <div className="sliderImg">
         <img src={client4} alt="" />
@@ -49,7 +49,7 @@ const CustomerReview = () => {
     <div className="slide-content">
       <div className="slideTxt">
         <div className="slideHeadline">Juliette</div>
-        <div>Заказала шторы для спальни - качество отличное, ткань плотная, с красивым блеском. Цвет точно как на фото, всё аккуратно пошито. Доставили быстро.</div>
+        <div>J'ai commandé des rideaux pour la chambre - excellente qualité, tissu épais et magnifiquement brillant. La couleur est exactement comme sur la photo, tout est soigneusement cousu. Livraison rapide.</div>
       </div>
       <div className="sliderImg">
         <img src={client5} alt="" />
@@ -58,7 +58,7 @@ const CustomerReview = () => {
     <div className="slide-content">
       <div className="slideTxt">
         <div className="slideHeadline">Clémence</div>
-        <div>Купила шторы для детской - мягкие, приятные на ощупь. Ребёнок в восторге! Спасибо за быструю доставку и отличную упаковку.</div>
+        <div>J'ai acheté des rideaux pour la chambre des enfants: doux et agréables au toucher. L'enfant est ravi! Merci pour la livraison rapide et l'excellent emballage.</div>
       </div>
       <div className="sliderImg">
         <img src={client6} alt="" />
@@ -67,7 +67,7 @@ const CustomerReview = () => {
     <div className="slide-content">
       <div className="slideTxt">
         <div className="slideHeadline">Manon</div>
-        <div>Эти шторы полностью преобразили нашу гостиную. Цвет - как на фото, ткань плотная, красиво драпируется. За такую цену - просто находка. Спасибо магазину!</div>
+        <div>Ces rideaux ont complètement transformé notre salon. La couleur est conforme à la photo, le tissu est épais et tombe magnifiquement. Pour un tel prix, une véritable aubaine. Merci à la boutique!</div>
       </div>
       <div className="sliderImg">
         <img src={client7} alt="" />
@@ -78,7 +78,7 @@ const CustomerReview = () => {
   return (
     <div className="customerReview" id="review">
       <div className="container customerReview-wrap ">
-        <div className="headline headlineR h2">Отзывы клиентов</div>
+        <div className="headline headlineR h2">Avis des clients</div>
         <Slider slides={slides} />
       </div>
     </div>

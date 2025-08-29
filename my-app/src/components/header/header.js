@@ -9,16 +9,16 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="#catalog">КАТАЛОГ</a>
+              <a href="#catalog">CATALOGUE</a>
             </li>
             <li>
-              <a href="#advantage">ПРЕИМУЩЕСТВА</a>
+              <a href="#advantage">AVANTAGES</a>
             </li>
             <li>
-              <a href="#review">Отзывы</a>
+              <a href="#review">Avis</a>
             </li>
             <li>
-              <a href="#order">КАК ЗАКАЗАТЬ</a>
+              <a href="#order">Comment commander</a>
             </li>
           </ul>
         </nav>

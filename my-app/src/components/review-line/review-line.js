@@ -5,7 +5,7 @@ const ReviewLine = () => {
     <div className="reviewLine">
       <div className="container reviewContainer">
         <div className="Num">97,8%</div>
-        <div> уровень удовлетворенности наших клиентов</div>
+        <div> de taux de satisfaction de nos clients</div>
       </div>
     </div>
   );

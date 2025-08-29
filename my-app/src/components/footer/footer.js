@@ -9,7 +9,7 @@ const FooterContainer = () => {
           L’élégance à vos fenêtres
         </div>
         <a className="btn btn-catalog" href="#catalog">
-          Смотреть каталог
+          voir le catalogue
         </a>
       </div>
     </div>

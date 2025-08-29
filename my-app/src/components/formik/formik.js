@@ -12,11 +12,11 @@ const FormBasic = ({ onSubmit }) => {
     >
       {() => (
         <Form className="orderForm">
-          <Field className="form-control" name="name" placeholder="Your name" required />
+          <Field className="form-control" name="name" placeholder="Votre nom" required />
           <Field className="form-control" name="phone" placeholder="+33..." required />
-          <Field className="form-control" name="adress" placeholder="Adress" required />
+          <Field className="form-control" name="adress" placeholder="Adresse" required />
           <button className="btn btn-primary" type="submit">
-            Оплатить заказ
+            Payer la commande
           </button>
         </Form>
       )}

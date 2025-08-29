@@ -27,10 +27,10 @@ const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleTha
           &#10005;
         </button>
 
-        <h2 className="h2">Корзина</h2>
+        <h2 className="h2">Panier</h2>
 
         {cartItems.length === 0 ? (
-          <p>Ваша корзина пуста.</p>
+          <p>Votre panier est vide.</p>
         ) : (
           <div className="itemCardWrapper">
             {cartItems.map((item, index) => (
@@ -41,7 +41,7 @@ const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleTha
                 <div className="itemTxt">
                   <div>
                     <div className="itemName h6">{item.name}</div>
-                    <div className="itemSelectedSize h6">Размер: {item.size || 'Не выбран'}</div>
+                    <div className="itemSelectedSize h6">Dimensions: {item.size || 'Non sélectionné'}</div>
                   </div>
                   <div className="itemPrice">{item.newPrice} €</div>
                 </div>
@@ -51,7 +51,7 @@ const ShoppingCart = ({ cartItems, onClose, onRemoveItem, onClearCart, toggleTha
               </div>
             ))}
 
-            <div className="totalSum fs-4">Итого: {getTotal()} €</div>
+            <div className="totalSum fs-4">Total: {getTotal()} €</div>
             <FormBasic onSubmit={handleOrderSubmit} />
           </div>
         )}

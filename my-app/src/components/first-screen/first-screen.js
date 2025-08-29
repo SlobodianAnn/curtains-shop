@@ -13,7 +13,7 @@ const FirstScreen = () => {
             <div className="sale-subtxt display-7">Chez Solea, chaque rideau est une touche de lumière et de raffinement. Des tissus délicats, des couleurs harmonieuses et un style intemporel pour sublimer votre intérieur. Offrez à vos fenêtres l’élégance qu’elles méritent.</div>
           </div>
           <a className="btn btn-catalog" href="#catalog">
-            Смотреть каталог
+            voir le catalogue
           </a>
         </div>
       </div>

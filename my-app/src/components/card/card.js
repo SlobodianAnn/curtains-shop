@@ -3,7 +3,6 @@ import './card.css';
 import { FiveStars, FourHalfStars, FourStars } from '../star-rating/star-rating';
 
 const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCart, onOpenCart, rating }) => {
-  // Инициализируем selectedSize: если пришёл пропс size — ставим его, иначе дефолтный вариант
   const [selectedSize, setSelectedSize] = useState('220x300');
   const discountPercent = '50';
   const calculatedOldPrice = (newPrice * 2).toFixed(2);
@@ -15,7 +14,7 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
     oldPrice,
     newPrice,
     material,
-    size: selectedSize, // передаём выбранный размер
+    size: selectedSize,
     id,
     rating,
   };
@@ -41,19 +40,13 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
 
       <div className="cardName">{name}</div>
       {selectRating(rating)}
-      <div className="cardAmount">Осталось: {count} шт.</div>
-      <div className="cardInfo">Материалы: {material}</div>
-      <div className="cardInfo">В комплект входит тюль</div>
+      <div className="cardAmount">Restant: {count} pièces.</div>
+      <div className="cardInfo">Type de tissu: {material}</div>
+      <div className="cardInfo">L'ensemble comprend du tulle</div>
 
       <div className="cardInfoSIze">
-        Размер:
-        <select
-          className="form-select"
-          name="sizeSaleItem"
-          id="sizeSaleItem"
-          value={selectedSize} // связали селект с состоянием
-          onChange={(e) => setSelectedSize(e.target.value)} // обновляем состояние при выборе
-        >
+        Dimensions:
+        <select className="form-select" name="sizeSaleItem" id="sizeSaleItem" value={selectedSize} onChange={(e) => setSelectedSize(e.target.value)}>
           <option value="220x300">220x300</option>
           <option value="240x300">240x300</option>
           <option value="260x300">260x300</option>
@@ -72,10 +65,10 @@ const Card = ({ image, name, count, oldPrice, newPrice, material, id, onAddToCar
         className="cardBtnOrder"
         onClick={() => {
           onAddToCart(itemData);
-          onOpenCart(); // открываем корзину
+          onOpenCart(); // открыть корзину
         }}
       >
-        Выбрать
+        Ajouter au panier
       </button>
     </div>
   );
