@@ -1,6 +1,6 @@
 .footerContainer {
   background: url('../../img/footer.jpg');
-  padding: 100px 0;
+  padding: 100px 0 100px 0;
   position: relative;
   color: white;
 }
@@ -30,4 +30,12 @@
 .footerHeadline {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: bold;
+}
+
+.oferta-link {
+  color: white;
+}
+
+.oferta-info {
+  margin-top: 15px;
 }
