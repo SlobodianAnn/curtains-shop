@@ -4,9 +4,10 @@ import './formik.css';
 const FormBasic = ({ onSubmit }) => {
   return (
     <Formik
-      initialValues={{ name: '', phone: '', adress: '' }}
+      initialValues={{ name: '', phone: '', adress: '', totalPrice: '' }}
       onSubmit={(values, { resetForm }) => {
-        onSubmit(values);
+        const result = onSubmit(values);
+        //console.log(result);
         resetForm();
       }}
     >
